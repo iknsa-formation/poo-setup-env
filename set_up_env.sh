@@ -43,6 +43,10 @@ echo -e "$Cyan \n Installing PHP extensions $Color_Off"
 sudo apt install -y --no-install-recommends php libapache2-mod-php php-mysql php-curl php-json php-gd php-msgpack php-memcached php-intl php-sqlite3 php-gmp php-geoip php-mbstring php-redis php-xml php-zip php-fpdf
 sudo apt install -y libcurl4-openssl-dev pkg-config libssl-dev libsslcommon2-dev curl libcurl4-doc libcurl3-dbg libidn11-dev libkrb5-dev libldap2-dev librtmp-dev php-cli php-dev php-common php-cgi libphp-jpgraph
 
+sudo add-apt-repository ppa:ondrej/php -y
+sudo apt-get update -y
+sudo apt-get install php-phalcon libpcre3-dev gcc make -y
+
 #Install composer 
 sudo apt install -y composer
 
